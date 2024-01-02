@@ -1,0 +1,66 @@
+.viennoiserie-items{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.viennoiserie-card{
+    position: relative;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.viennoiserie-card:hover{
+    background-color: #efefef;
+    scale: 1.02;
+    transition: all 1s;
+}
+
+.viennoiserieCard-content p{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.viennoiserieCard-content .price{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: white;
+    padding: 2px 10px;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    background-color: red;
+    border-radius: 25px;
+}
+
+.viennoiserie-card img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 200px;
+}
+
+button.buy{
+    width: 50%;
+    height: 40px;
+    background-color: #27AE60;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 85px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button.buy:hover{
+    scale: 1.05;
+    transition: all 1ms;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}

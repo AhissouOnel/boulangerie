@@ -1,0 +1,214 @@
+/**********Titre***********/
+.title{
+    margin: 30px auto;
+}
+
+.title h2{
+    text-align: center;
+    color: #2471A3;
+    padding: 15px auto;
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-variant: small-caps;
+    font-style: italic;
+    text-shadow: #2471A3;
+}
+
+.title h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: lighter;
+    animation: zoomIn 4s linear infinite;
+    animation-delay: 0ms;
+    opacity: 1;
+    text-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8, 0.8);
+      }
+      50% {
+        transform: scale(1, 1);
+      }
+      100% {
+        transform: scale(0.8, 0.8);
+        opacity: 0.1;
+      }
+}
+
+/**************Carrousel***************/
+.carousels-images{
+    z-index: 996 !important;
+}
+
+.owl-stage{
+    height: 250px;
+    padding: 10px;
+}
+
+.image-item img{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 996;
+}
+
+.image-item img:hover{
+    scale: 1.02;
+    transition: all 5ms;
+    box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.2);
+}
+/*************Presentation*************/
+.presentation{
+    margin: 30px auto;
+    background-color: #efefef;
+}
+.presentation h3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: lighter;
+}
+.presentation-content{
+    padding: 10px;
+    gap: 10px;
+}
+.presentation-content img{
+    height: 250px;
+    width: 500px;
+}
+.presentation-content p{
+    padding: 10px;
+    padding-top: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.presentation-content p::first-letter{
+    font-size: 2rem;
+}
+.presentation-content p strong{
+    font-style: italic;
+}
+
+/****************History*******************/
+.history{
+    margin: 30px auto;
+}
+.history h3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: lighter;
+}
+.history-content{
+    padding: 10px;
+    gap: 10px;
+}
+.history-content img{
+    height: 350px;
+    width: 500px;
+}
+.history-content p{
+    padding: 10px;
+    padding-top: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.history-content p::first-letter{
+    font-size: 2rem;
+}
+.history-content p strong{
+    font-style: italic;
+}
+
+/****************Valeur***************/
+.valeur{
+    margin: 30px auto;
+    background-color: #efefef;
+}
+.valeur h3{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: lighter;
+}
+.valeur-content{
+    padding: 10px;
+    gap: 10px;
+}
+.valeur-content img{
+    height: 450px;
+    width: 500px;
+}
+.valeur-content p{
+    padding: 10px;
+    padding-top: 0;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.valeur-content p::first-letter{
+    font-size: 2rem;
+}
+.valeur-content p strong{
+    font-style: italic; 
+}
+
+
+
+/****************Medias queries***************/
+@media screen and (max-width: 1110px){
+    .presentation-content{
+        display: block;
+    }
+    .presentation-content img{
+        width: 100%;
+        height: 370px;
+    }
+    .presentation-content p{
+        font-size: 1rem;
+    }
+
+    .history-content{
+        display: block;
+    }
+    .history-content img{
+        width: 100%;
+        height: 370px;
+    }
+    .history-content p{
+        font-size: 1rem;
+    }
+
+    .valeur-content{
+        display: block;
+        gap: 5px;
+    }
+    .valeur-content img{
+        width: 100%;
+        height: 370px;
+    }
+    .valeur-content p{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 851px) {
+    .title h2{
+        font-size: 2.5rem;
+    }
+    .title h3{
+        font-size: 1.5rem;
+    }
+    .presentation h3,
+    .history h3,
+    .valeur h3{
+        font-size: 1.5rem;
+    }
+}

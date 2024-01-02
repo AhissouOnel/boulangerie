@@ -1,0 +1,117 @@
+.contact{
+    gap: 15px;
+}
+
+.contact-content{
+    flex: 1;
+    margin: 10px 20px;
+
+}
+.contact-content h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    margin: 0;
+}
+
+.contact-content p{
+    font-size: 1rem;
+    text-align: justify;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.contact-content .infos .location,
+.email,
+.telephone{
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-content .infos .location i,
+.email i,
+.telephone i{
+    font-size: 1.5rem;
+    color: #27AE60;
+}
+
+.contact-content .infos .location p,
+.email p,
+.telephone p{
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+
+
+
+
+.contact-form{
+    flex: 1;
+}
+.contact-form h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    margin: 0;
+}
+
+.contact-form .form{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.contact-form input{
+    width: 75%;
+    height: 40px;
+    padding-left: 5px;
+    margin: 5px 0;
+    outline: none;
+    border: 0.1px solid #ccc;
+    border-radius: 7px;
+}
+.contact-form textarea{
+    width: 74.8%;
+    resize: none;
+    outline: none;
+    padding-left: 5px;
+    border: 0.1px solid #ccc;
+    border-radius: 7px;
+}
+
+
+.contact-form form button{
+    width: 20%;
+    height: 35px;
+    background-color: #27AE60;
+    color: white;
+    margin: 10px auto;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.contact-form form button:hover{
+    scale: 1.05;
+    transition: all 1ms;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width:600px) {
+    .contact{
+        flex-direction: column;
+    }
+    .contact-content{
+        padding-left: 5px;
+    }
+    .contact-form{
+        padding-left: 15px;
+    }
+    .contact-form input{
+        width: 100%;
+    }
+    .contact-form textarea{
+        width: 100%;
+    }
+}

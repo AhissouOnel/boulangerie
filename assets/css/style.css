@@ -1,0 +1,392 @@
+header{
+    height: 90px;
+    background-color: #2471A3;
+    position: sticky !important;
+    top: 0;
+    z-index: 999;
+}
+
+/***********Nav-left*************/
+.nav-left{
+    flex: 3;
+}
+.nav-left .logo img{
+    height: 80px;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 8px 12px -8px black;
+}
+
+.nav-left .name h1{
+    margin-left: 15px;
+    font-size: 2rem;
+    font-variant: small-caps;
+    font-weight: 500;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-style: italic;
+    color:white;
+}
+
+/*************Nav-right************/
+.nav-icon i{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 25px;
+    color: white;
+    right: 25px;
+}
+
+.nav-right{
+    flex: 2;
+    margin-right: 35px;
+}
+
+ul{
+    gap: 25px;
+}
+
+ul li{
+    justify-content: center;
+    align-items: center !important;
+    line-height: 30px;
+}
+
+ul li a{
+    padding: 29px 5px;
+    align-items: center;
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+ul li a:hover{
+    scale: 1.05;
+    transition: all 5ms;
+}
+
+ul li ul li{
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+    top: 2px;
+}
+
+ul ul li{
+    height: 35px;
+    background-color: #2471A3;
+}
+
+ul ul a{
+    line-height: 15px;
+}
+
+ul li ul li a{
+    color: white;
+    text-align: start;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+ul li ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/**********Aside********/
+.aside{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    height: 100%;
+    background-color: #2471A3;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.aside .close i{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.aside .close i:hover{
+    scale: 1.05;
+    transition: all 1ms;
+}
+
+
+.aside .links{
+    margin-top: 100px;
+    left: 70px;
+    text-align: center;
+}
+.aside .links ul{
+    text-align: center;
+    flex-direction: column;
+}
+
+.aside .links ul li{
+    padding-top: 2px;
+    border-bottom: 1px solid;
+}
+.aside .links ul li:hover{
+    scale: 1.05;
+    transition: all 1ms;
+}
+
+
+.links-items{
+    left: 25px;
+}
+.link-items{
+    background-color: white;
+}
+.link-items a{
+    color: black;
+    font-size: 1rem;
+}
+.link-items:hover{
+    background-color: #2471A3;
+}
+.link-items:hover{
+    color: white;
+}
+/**************Container***************/
+.container{
+    margin: 10px 70px;
+    background-color: white;
+    text-align: justify;
+}
+
+
+/************Footer***********/
+
+/*Footer top*/
+.footer-top{
+    height: auto;
+    padding: 0 49px;
+    gap: 10px;
+    background-color: #2471A3;
+    color: white;
+}
+
+
+.footer-top .follow{
+    padding: 10px;
+    flex: 1;
+}
+.footer-top .follow h2{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.footer-top .follow p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+.follow-icons a{
+    color: inherit;
+    font-size: 1.5rem;
+}
+.follow-icons a:hover{
+    scale: 1.05;
+    box-shadow: 2px 8px 12px -8px black;
+    transition: all 100ms;
+}
+
+
+
+.footer-top .pages{
+    flex: 1;
+    padding: 10px;
+}
+.footer-top .pages h2{
+    margin: 0;
+    font-size: 1.7rem;
+    font-weight: bold; 
+}
+.pages-links{
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.pages-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.1px solid;
+}
+.pages-links a:hover{
+    background-color: white;
+    color: black;
+    transition: all 1s;
+    border: 1px solid;
+    box-shadow: 2px 8px 12px -8px black;
+}
+
+/*Footer bas*/
+.footer-bas .copyright{
+    color: white;
+    background-color: #1C2833;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+
+
+/**************************Medias queries**************************/
+@media screen and(max-width: 1110px){
+    .nav-left .name h1{
+        margin-left: 5px;
+    }
+    .nav-right{
+        margin-right: 2px;
+    }
+    .nav-right ul{
+        gap: 2px;
+    }
+    .pages-links{
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .nav-left .name h1{
+        margin-left: 2px;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+    .nav-right ul{
+        margin-right: 0;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    header{
+        height: 70px;
+    }
+    .nav-left .logo img{
+        margin-left: 15px;
+        height: 60px;
+        border-radius: 15px;
+    }
+    .nav-left .name h1{
+        margin-left: 5px;
+        margin-bottom: 0;
+        padding-top: 0;
+        font-size: 1.7rem;
+        font-variant: small-caps;
+        font-weight: 500;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+        font-style: italic;
+        color:white;
+    }
+    .nav-right{
+        flex: 1;
+    }
+    .nav-right ul{
+        display: none;
+    }
+    .nav-icon{
+        display: block;
+        font-size: 1.3rem;
+        top: 5px;
+    }
+    .nav-icon i{
+        font-size: 2rem;
+        top: 20px;
+        color: white;
+        right: 35px;
+    }
+    .container{
+        margin: 10px 20px;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .footer-bas .copyright{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .nav-left .logo img{
+        margin-left: 0;
+        height: 60px;
+        border-radius: 15px;
+    }
+    .nav-icon i{
+        top: 18px;
+        margin-right: 0;
+        right: 0px;
+        font-size: 1.9rem;
+    }
+    .nav-left .name h1{
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+
+    .footer-top .follow h2{
+        font-size: 1.5rem;
+    }
+    .footer-top .follow p{
+        font-size: 1.2rem;
+    }
+
+    .footer-top .suggestion h2{
+        font-size: 1.5rem;
+    }
+
+    .footer-top .pages h2{
+        font-size: 1.5rem;
+    }
+    .pages-links a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*.nav-left .logo img{
+        height: 20px;
+    }*/
+    .nav-left .name h1{
+        font-size: 0.9rem;
+    }
+    .nav-right .nav-icon i{
+        font-size: 1.5rem;
+    }
+
+    .footer-top .follow h2{
+        font-size: 1.2rem;
+    }
+    .footer-top .follow p{
+        font-size: 1rem;
+    }
+
+    .footer-top .suggestion h2{
+        font-size: 1.2rem;
+    }
+
+    .footer-top .pages h2{
+        font-size: 1.2rem;
+    }
+    .pages-links a{
+        font-size: 1rem;
+    }
+}
