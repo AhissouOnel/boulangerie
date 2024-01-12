@@ -7,6 +7,6 @@ navIcon.onclick = () =>{
     menu.classList.add('slideIn')
 }
 
-close.onclick = () =>{
+close.onclick = () =>{ 
     menu.style.display = "none"
 }
